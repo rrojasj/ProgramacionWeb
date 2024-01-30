@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <!-- ajuste de pantalla responsiva -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Plantilla Bootstrap</title>
+
+    <!-- CDN carga del framework Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <style>
+      /* https://www.colorhexa.com */
+      
+      .formatos1 {
+        color: #fff;
+        background-color: #008CFF;
+        padding: 30px;
+      }
+    </style>
+
+  </head>
+  <body>
+
+    <section class="container">
+      <h1 class="text-center">Ejercicio #1</h1>
+
+      <script>
+        //declaración de variables
+
+        let mensaje = true;
+        let edad = 24;
+        let porcentaje = 15.50;
+        let texto = "Roberto";
+        let fecha = new Date();
+
+        //Se puede usar para escribir etiquetas HTML y clases CSS
+        document.write("<br> El tipo de booleano es: " + typeof mensaje);
+        document.write("<br> El tipo de numérico es: " + typeof edad);
+        document.write("<br> El tipo de numérico_flotante es: " + typeof porcentaje);
+        document.write("<br> El tipo de texto es: " + typeof texto);
+        document.write("<br> El tipo de fecha es: " + typeof fecha);
+
+        //Se puede usar estilos internos
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<strong><h3 style='color: #008cff'>Curso JavaScript</h3></strong>");
+
+        //Se puede usar clases CSS
+        document.write("<hr>");
+        document.write("<br> <h3 class='formatos1'>Sitios y Aplicaciones web</h3>");
+
+      </script>
+
+
+    </section>
+
+
+
+
+
+
+    <!-- CDN carga la parte interactiva de componentes -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+
+    
+  </body>
+</html>
