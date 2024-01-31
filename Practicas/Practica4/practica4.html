@@ -6,15 +6,56 @@
     <!-- ajuste de pantalla responsiva -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Plantilla Bootstrap</title>
+    <title>Práctica #4</title>
 
     <!-- CDN carga del framework Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   </head>
   <body>
 
+    <section class="container text-center">
+      <h1 class="text-center">Práctica #4</h1>
 
+      <!-- Ocultar las opciones de la lista con UL -->
+      <ul class="display-3" id="myList" style="display: none">
+        <!-- list-style: none -- Desactiva las viñetas de los <ul> -->
+        <div style="list-style:none" class="text-center">
+          <li>Curso Ilustrador</li>
+          <li>Curso Photoshop</li>
+          <li>Curso Indexing</li>
+          <li>Curso Premiere</li>
+          <li>Curso Adobe Acrobat</li>
+        </div>
+      </ul>
 
+      <div class="pt-5"></div>
+      <p class="display-4 text-primary">Lista de cursos</p>
+      <div class="pt-3"></div>
+
+      <!-- carga las funciones -->
+      <button onclick="listado()">Mostrar lista de curso</button>
+      <button onclick="ocultar()">Ocultar lista de curso</button>
+
+      <!-- Mostrar u ocultar el listado de opciones textuales -->
+      <p id="resultado"></p>
+
+    </section>
+
+    <script>
+      function listado(){
+        // La variable "x" muestra la lista por medio del ID myList
+        var x = document.getElementById("myList").innerHTML;
+        document.getElementById("resultado").innerHTML = x;
+        document.getElementById("resultado").style.display = "block";
+      }
+      function ocultar(){
+        // La variable "x" oculta la lista por medio del ID myList
+        var x = document.getElementById("myList").innerHTML;
+        document.getElementById("resultado").innerHTML = x;
+        document.getElementById("resultado").style.display = "none";
+      }
+
+    </script>
 
 
     <!-- CDN carga la parte interactiva de componentes -->
