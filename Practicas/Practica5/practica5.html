@@ -6,16 +6,63 @@
     <!-- ajuste de pantalla responsiva -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Plantilla Bootstrap</title>
+    <title>Práctica #5</title>
 
     <!-- CDN carga del framework Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   </head>
   <body>
 
+    <section class="container text-center">
+      <h1 class="text-center">Práctica #5</h1>
+      <p class="display-4 text-primary">Ver imágenes</p>
+      <div class="pt-3"></div>
+      <button onclick="ver1">Ver imagen 1</button>
+      <button onclick="ver1">Ver imagen 2</button>
+      <button onclick="ocultar()">Ocultar</button>
+      <div class="pt-5"></div>
 
+      <!-- Mostrar la imagen del personaje -->
+      <div id="ima0" style="display: block">
+        <img src="imgs/" alt="">
+      </div>
 
+      <div id="ima2" style="display: none">
+        <img src="imgs/" alt="">
+      </div>
 
+      <script>
+        function ver1(){
+          document.getElementById("ima1").style.display = 'block';
+          document.getElementById("ima2").style.display = 'none';
+          document.getElementById ("ima0").style.display = 'none';
+        }
+      </script>
+
+      <script>
+        function ver1(){
+          document.getElementById("ima2").style.display = 'block';
+          document.getElementById("ima1").style.display = 'none';
+          document.getElementById ("ima0").style.display = 'none';
+        }
+      </script>
+
+      <script>
+        function ocultar(){
+          document.getElementById("ima1").style.display = 'none';
+          document.getElementById("ima2").style.display = 'none';
+          document.getElementById ("ima0").style.display = 'none';
+        }
+      </script>
+      
+
+    </section>
+
+    <script>
+      function ver1(){
+        document.getElementById
+      }
+    </script>
 
     <!-- CDN carga la parte interactiva de componentes -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
