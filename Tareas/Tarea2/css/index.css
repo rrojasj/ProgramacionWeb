@@ -1,0 +1,542 @@
+/******* header *****/
+
+header {
+    background: rgba(255, 255, 255, 0.6);
+    border-bottom: 5px solid #FF1616;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9;
+    transition: all 0.5s ease 0s;
+}
+
+header .contenedor {
+    margin: 0 auto;
+    display: flow-root;
+    position: relative;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header .logo {
+    display: block;
+    width: 217px;
+    height: 95px;
+    background: url('../img/logo/Logo - White BG - small - transp.svg') no-repeat top left;
+    background-size: 100% !important;
+    margin: 30px 0px 5px -24px;
+    float: none;
+    transition: all 0.5s ease 0s;
+    z-index: -50%;
+}
+
+header .menuPrincipal-Activador {
+    margin: 43px 0px;
+    cursor: pointer;
+    width: 25px;
+    height: 3px;
+    padding: 9px 0px;
+    transition: all 0.5s ease 0s;
+}
+
+header .menuPrincipal-Activador span {
+    position: relative;
+    display: block;
+}
+
+header .menuPrincipal-Activador span,
+header .menuPrincipal-Activador span::before,
+header .menuPrincipal-Activador span::after {
+    width: 25px;
+    height: 4px;
+    background: #28282B;
+    display: block;
+    transition: all 0.5s ease 0s;
+}
+
+header .menuPrincipal-Activador span::before,
+header .menuPrincipal-Activador span::after {
+    position: absolute;
+    left: 0px;
+    content: "";
+}
+
+header .menuPrincipal-Activador span::before {
+    top: -8px;
+}
+
+header .menuPrincipal-Activador span::after {
+    bottom: -8px;
+}
+
+header .menuPrincipal {
+    position: absolute;
+    top: -100px;
+    right: 50px;
+    transition: all 0.5s ease 0s;
+}
+
+header .menuPrincipal li {
+    display: block;
+    float: left;
+    padding: 0 15px;
+}
+
+header .menuPrincipal li a {
+    padding: 10px 0px;
+    display: block;
+    position: relative;
+    font-family: 'Righteous', cursive;
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+
+header .menuPrincipal li a:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+header .menuPrincipal li a::after {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    content: "";
+    margin: 0 auto;
+    display: block;
+    width: 0%;
+    height: 0;
+    height: 1px;
+    background: rgba(255, 255, 255, 0);
+    transition: all 0.5s ease 0s;
+}
+
+header .menuPrincipal li a:hover::after {
+    width: 100%;
+    background: rgba(255, 255, 255, 1);
+    transition: all 0.5s ease 0s;
+}
+
+header.Activado {
+    background: rgba(0, 0, 0, 0.6);
+    transition: all 0.5s ease 0s;
+}
+
+header.Activado .logo {
+    background: url('../img/logo/Logo - Black BG - small - transp.svg') no-repeat top left;
+    transition: all 0.5s ease 0s;
+}
+
+header.Activado .menuPrincipal-Activador span,
+header.Activado .menuPrincipal-Activador span::before {
+    width: 27px;
+    height: 4px;
+    background: #ffffff;
+    transition: all 0.5s ease 0s;
+    transform: rotate(45deg);
+}
+
+header.Activado .menuPrincipal-Activador span::after {
+    width: 0;
+    height: 0;
+}
+
+header.Activado .menuPrincipal-Activador span {
+    transform: rotate(45deg);
+}
+
+header.Activado .menuPrincipal-Activador span::before {
+    transform: rotate(-90deg);
+    top: 0px;
+}
+
+header.Activado .menuPrincipal {
+    top: 30px;
+    transition: all 0.5s ease 0s;
+}
+
+header.fixed {
+    position: fixed;
+}
+
+header.fixed .logo {
+    width: 150px;
+    height: 70px;
+    transition: all 0.5s ease 0s;
+}
+
+header.fixed .menuPrincipal-Activador {
+    margin: 29px 0px;
+    transition: all 0.5s ease 0s;
+}
+
+header.Activado.fixed .menuPrincipal {
+    top: 20px;
+}
+
+header.fixed .menuPrincipal li a {
+    font-size: 20px;
+}
+
+
+/******* slider *****/
+
+
+.sliderContenedor {
+    height: 600px;
+    width: 100%;
+}
+
+.slide {
+    /*display: none;*/
+    position: relative;
+}
+
+.slide span {
+    width: 100%;
+    display: block;
+    height: 600px;
+    background-size: cover;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+}
+
+.slide span.sliderImagen1 {
+    background-image: url(../img/index/slider1.png);
+}
+
+.slide span.sliderImagen2 {
+    background-image: url(../img/index/slider2.png);
+}
+
+.slide span.sliderImagen3 {
+    background-image: url(../img/index/slider3.png);
+}
+
+.sliderInformacion {
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+}
+
+.sliderInformacion p.titulo {
+    font-family: 'Righteous', cursive;
+    font-size: 30px;
+    line-height: 35px;
+    margin-bottom: 30px;
+}
+
+.sliderInformacion p {
+    color: #080808;
+    letter-spacing: 5px;
+    line-height: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    width: 350px;
+    max-width: 100%;
+}
+
+.animacionTitulo {
+    -webkit-animation-name: animacionTitulo;
+    -webkit-animation-duration: 1.9s;
+    animation-name: animacionTitulo;
+    animation-duration: 1.9s;
+}
+
+@-webkit-keyframes animacionTitulo {
+    0% {
+        opacity: .4;
+        left: 30%;
+    }
+    100% {
+        left: 10%;
+    }
+}
+
+@keyframes animacionTitulo {
+    0% {
+        opacity: .4;
+        left: 30%;
+    }
+    100% {
+        left: 10%;
+    }
+}
+
+main>section {
+    padding-bottom: 75px;
+}
+
+section.contenedor {
+    margin: 25px auto;
+    max-width: 1024px;
+}
+
+h2 {
+    font-family: 'Righteous', cursive;
+    font-size: 30px;
+    text-align: center;
+    color: #28282B;
+    padding-top: 100px;
+    letter-spacing: 3px;
+}
+
+.imgBtn {
+    display: block;
+    color: #FDFDFD;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    letter-spacing: 5px;
+    text-decoration: none;
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 411px;
+    height: 73px;
+    padding: 10px;
+}
+
+.imgBtn:hover {
+    color: #FDFDFD;
+    text-decoration: none;
+}
+
+.imgBtn span.accionesContenedor {
+    text-align: center;
+    background: rgba(255, 255, 255, 0);
+    border: 1px solid rgba(255, 255, 255, 0);
+    transition: all 0.5s ease 0s;
+    display: block;
+    width: 409px;
+    height: 71px;
+    position: relative;
+}
+
+.imgBtn:hover span.accionesContenedor {
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 1);
+    transition: all 0.5s ease 0s;
+}
+
+.imgBtn span.masInfo,
+.imgBtn span.llamarAccion {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+}
+
+.imgBtn span.masInfo,
+.imgBtn:hover span.llamarAccion {
+    font-size: 24px;
+    opacity: 1;
+    transition: all 0.5s ease 0s;
+}
+
+.imgBtn:hover span.masInfo,
+.imgBtn span.llamarAccion {
+    font-size: 0px;
+    opacity: 0;
+    transition: all 0.5s ease 0s;
+}
+
+.seccion-izq {
+    float: center;
+    margin-top: 15px;
+    transform: translate(0, +150%);
+}
+
+.seccion-der {
+    float: right;
+}
+
+.imgBtn.iniciarSitioApp {
+    background-image: url("../img/index/iniciarSitioApp.jpg");
+}
+
+/*******Responsive********/
+
+@media screen and (max-width: 1700px) {
+    header.Activado .menuPrincipal {
+        top: 34px;
+    }
+    header .menuPrincipal li a,
+    header.fixed .menuPrincipal li a {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    header .menuPrincipal li {
+        padding: 0 10px;
+    }
+    header .menuPrincipal li a,
+    header.fixed .menuPrincipal li a {
+        font-size: 18px;
+    }
+    .slide span {
+        background-position: bottom center;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    header .logo {
+        width: 150px;
+        height: 70px;
+    }
+    header .menuPrincipal li a,
+    header.fixed .menuPrincipal li a {
+        font-size: 16px;
+    }
+    header.Activado .menuPrincipal-Activador span,
+    header.Activado .menuPrincipal-Activador span::before {
+        width: 23px;
+    }
+    header.Activado .menuPrincipal {
+        top: 20px;
+    }
+    header .menuPrincipal-Activador {
+        margin: 29px 0px;
+    }
+    .sliderContenedor,
+    .slide span {
+        height: 420px;
+    }
+    .sliderInformacion {
+        transform: none;
+    }
+    .sliderInformacion p.titulo {
+        font-size: 25px;
+        line-height: 25px;
+        margin-bottom: 20px;
+    }
+    .sliderInformacion p {
+        font-size: 15px;
+    }
+    .contenedor,
+    section.contenedor {
+        max-width: 90%;
+        width: 90%;
+    }
+    .sliderInformacion {
+        left: 5%;
+    }
+    @-webkit-keyframes animacionTitulo {
+        0% {
+            opacity: .4;
+            left: 30%;
+        }
+        100% {
+            left: 5%;
+        }
+    }
+    @keyframes animacionTitulo {
+        0% {
+            opacity: .4;
+            left: 30%;
+        }
+        100% {
+            left: 5%;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    header.Activado {
+        background: rgba(0, 0, 0, 0.8);
+    }
+    header .menuPrincipal {
+        right: 35px;
+    }
+    header .menuPrincipal li {
+        padding: 0 5px;
+    }
+    header .menuPrincipal li a,
+    header.fixed .menuPrincipal li a {
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+    header.fixed .logo {
+        width: 140px;
+    }
+    header.Activado {
+        height: 110px;
+        transition: all 0.5s ease 0s;
+    }
+    header.Activado.fixed .menuPrincipal {
+        top: -65px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        right: 0;
+    }
+    header.Activado.fixed .menuPrincipal {
+        top: 65px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    header.Activado {
+        height: 250px;
+        transition: all 0.5s ease 0s;
+    }
+    header .menuPrincipal {
+        top: -200px;
+    }
+    header.Activado.fixed .menuPrincipal {
+        top: 30px;
+        display: block;
+        right: 35px;
+        width: calc(100% - 35px);
+    }
+    header .menuPrincipal li,
+    header.Activado.fixed .menuPrincipal li {
+        float: none !important;
+    }
+    header .menuPrincipal li a {
+        text-align: right;
+    }
+    .sliderContenedor,
+    .slide span {
+        height: 290px;
+    }
+    .slide span {
+        opacity: 0.5;
+    }
+    .sliderInformacion {
+        top: 32%;
+    }
+    .sliderInformacion p.titulo {
+        font-size: 20px;
+    }
+    .sliderInformacion p {
+        width: 290px;
+    }
+
+    .imgBtn {
+        background-size: 100%;
+        width: 261px;
+        height: 42px;
+        padding: 10px;
+        margin: 0px auto;
+    }
+    .imgBtn span.accionesContenedor {
+        width: 259px;
+        height: 41px;
+    }
+    .imgBtn span.masInfo,
+    .imgBtn:hover span.llamarAccion {
+        font-size: 18px;
+    }
+}
