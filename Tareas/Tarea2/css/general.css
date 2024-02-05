@@ -5,4 +5,10 @@
     float: right;
 }
 
+button {
+    background-color: #ff1616 !important;
+    border-color: #ff1616 !important;
+    align-items: center;
+    padding: 5px 25px !important;
+}
 
