@@ -1,0 +1,33 @@
+
+.banner-landing {
+    background-image: url("../img/landing/landing1.jpeg");
+}
+
+h1 {
+    font-size: 70px !important;
+    color: #f0f0f0 !important;
+}
+
+h2 {
+    font-size: 50px !important;
+    color: #f0f0f0 !important;
+}
+
+h1 span {
+    color: #ff3333;
+}
+
+.copyright h3{
+    padding-top: 200px;
+}
+
+h3 {
+    color: #f0f0f0 !important;
+}
+
+.icon-bg {
+    background-color: white;
+    padding: 10px; /* Adjust padding as needed */
+    border-radius: 50%; /* Optional: Add a border-radius for a circular shape */
+    text-align: center; /* Center the icon within the div */
+  }

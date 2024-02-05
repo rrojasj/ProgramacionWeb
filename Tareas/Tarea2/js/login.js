@@ -13,7 +13,7 @@ function userLogin () {
           }).then((result) => {
             // Redirige a otra página después de hacer clic en OK en el SweetAlert
             if (result.isConfirmed) {
-              window.location.href = 'index.html';
+              window.location.href = 'landing.html';
             }
           });
     }else {
