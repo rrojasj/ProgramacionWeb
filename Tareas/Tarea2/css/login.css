@@ -1,6 +1,8 @@
 
 .banner-login {
-    background-image: url("../img/login/login1.png");
+    background-image: url("../imgs/login/login1.png");
+    height: 100vh; /* Cubre el 100% del alto de la página */
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
 }
 
 label {

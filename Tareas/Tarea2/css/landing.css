@@ -1,6 +1,7 @@
 
 .banner-landing {
-    background-image: url("../img/landing/landing1.jpeg");
+    background-image: url("../imgs/landing/landing1.jpeg");
+    height: 170vh; /* Cubre el 100% del alto de la página */
 }
 
 h1 {
