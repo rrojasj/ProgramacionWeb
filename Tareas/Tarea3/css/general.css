@@ -1,0 +1,27 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    border-bottom: 1px solid #cccbcb;
+}
+
+footer {
+    background-color: #275583;
+}
+
+h2 {
+    color: #275583;
+}
+
+h3 {
+    color: #e86069;
+}
+
+.menu-items a {
+    color: #275583;
+}
+
+.h-logo {
+    padding-top: 10px;
+}

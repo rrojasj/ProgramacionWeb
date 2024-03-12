@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="imgs/pw_t3_favicon.png">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/reglas.css">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c3a0c05b30.js" crossorigin="anonymous"></script>
+
+    <title>Programación Web - Tarea #3</title>
+</head>
+
+<body id="inicio">
+
+
+    <header class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-6 h-logo">
+                    <img src="imgs/pw_t3_index_logo.png" alt="Menu de Retos">
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6 pt-3">
+                    <ul class="nav justify-content-end menu-items">
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="https://ucenfotec.ac.cr/" target="_blank">Cenfotec</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="https://sdtimes.com/sd-times-magazine" target="_blank">SD Times</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="https://www.developer-tech.com/" target="_blank">Developer Tech</a>
+                        </li>
+                      </ul>
+                      <div class="pb-2"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12 text-center">
+                    <h2 class="display-2 pt-5">Retos Programados</h2>
+                    <h3>Tarea Número 3</h3>
+                    <div>
+                        <div class="microinteraccion1-js pt-5 cursor"></div>
+                    </div>
+                </div>
+                <p class="text-left pt-5">A continuación se mostrará las opciones para cada uno de los retos</p>
+                <div class="col-12">
+                    <!-- COMBO DINAMICO --->
+                    <select name="menuOpciones" id="menuOpciones" class="form-select form-select-lg mb-5">
+                        <option value="" class="opcion0">Seleccionar un reto</option>
+                        <option value="reto1" class="opcion1">Reto 1</option>
+                        <option value="reto2" class="opcion2">Reto 2</option>
+                        <option value="reto3" class="opcion3">Reto 3</option>
+                        <option value="reto4" class="opcion4">Reto 4</option>
+                        <option value="reto5" class="opcion5">Reto 5</option>
+                        <option value="reto6" class="opcion6">Reto 6</option>
+                        <option value="reto7" class="opcion7">Reto 7</option>
+                        <option value="reto8" class="opcion8">Reto 8</option>
+                        <option value="reto9" class="opcion9">Reto 9</option>
+                        <option value="reto10" class="opcion10">Reto 10</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Sección por defecto --->
+            <div class="main-info">
+                
+                <div class="text-center">
+                    <h5 class="pt-4">Instrucción</h5>
+                    <p class="text-center">Desarrollar los siguientes retos de programación Java Script para lograr el objetivo. La gran mayoría son base de las prácticas realizadas en clase.</p>
+                    <img src="imgs/pw_t3_cenfotec_logo.png" alt="Cenfotec" class="img-fluid pt-4 pb-5">
+                </div>
+            </div>
+
+            <!-- Sección de Reto 1 --->
+            <div class="info-retos reto1 fondo mb-5">
+                <div class="text-center">
+                    <h5 class="pt-4">Reto 1</h5>
+                    <hr>
+                </div>
+                <p class="text-center">Crear una página web programada que tenga una interfaz de login que permita capturar un nombre de usuario y una clave. Si los datos de entrada son correctos debe ingresar al sitio web de la U Cenfotec, en caso contrario, debe aparecer un desplegable que lo intente de nuevo. El check dice Remember me, hacerlo funcional. Agregar una micro interacción para la validación.</p>
+                <div class="text-center">
+                    <img src="imgs/pw_t3_reto1.jpg" alt="Reto #1" class="img-fluid">
+                </div>
+
+                <div class="btn-general d-flex justify-content-center pt-5">
+                    <button type="button" id="btnReto1" class="btn btn-lg btn-secondary" onclick="navegarReto(this.id)">Reto #1</button>
+                </div>
+            </div>
+
+            <!-- Sección de Reto 2 --->
+            <div class="info-retos reto2 fondo mb-5">
+                <div class="text-center">
+                    <h5 class="pt-4">Reto 2</h5>
+                    <hr>
+                </div>
+                <p class="text-center">Crear una página web programada que tenga una factura digital que capture los siguientes datos, ver pantalla.</p>
+                <div class="text-center">
+                    <img src="imgs/pw_t3_reto2.jpg" alt="Reto #2" class="img-fluid">
+                </div>
+
+                <div class="btn-general d-flex justify-content-center pt-5">
+                    <button type="button" id="btnReto2" class="btn btn-lg btn-secondary" onclick="navegarReto(this.id)">Reto #2</button>
+                </div>
+            </div>
+
+            <!-- Sección de Reto 3 --->
+            <div class="info-retos reto3 fondo mb-5">
+                <div class="text-center">
+                    <h5 class="pt-4">Reto 3</h5>
+                    <hr>
+                </div>
+                <p class="text-center">Crear una página web programada que tenga el control de formulario "select" que permita mostrar productos en otras páginas web manteniendo el mismo diseño visual. La cantidad de páginas a mostrar serían 3. El vínculo URL a elegir puede ser el mismo que representa cada cine visitado.</p>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6 col-lg-6">
+                            <img src="imgs/pw_t3_reto3.1.jpg" alt="Reto #3" class="img-fluid">
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-6">
+                            <img src="imgs/pw_t3_reto3.2.jpg" alt="Reto #3" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-general d-flex justify-content-center pt-5">
+                    <button type="button" id="btnReto3" class="btn btn-lg btn-secondary" onclick="navegarReto(this.id)">Reto #3</button>
+                </div>
+            </div>
+
+            <!-- Sección de Reto 4 --->
+            <div class="info-retos reto4 fondo mb-5">
+                <div class="text-center">
+                    <h5 class="pt-4">Reto 4</h5>
+                    <hr>
+                </div>
+                <p class="text-center">Crear una página web programada que tenga una demostración donde se pueda elegir una opción del combo y se muestre una imagen representativa del contenido que se está mostrando. NO se admite hacer el mismo que el docente aplico en clase. Se le denomina combo simple programado.</p>
+                <div class="text-center">
+                    <img src="imgs/pw_t3_reto4.jpg" alt="Reto #4" class="img-fluid">
+                </div>
+
+                <div class="btn-general d-flex justify-content-center pt-5">
+                    <button type="button" id="btnReto4" class="btn btn-lg btn-secondary" onclick="navegarReto(this.id)">Reto #4</button>
+                </div>
+            </div>
+
+            <!-- Sección de Reto 5 --->
+            <div class="info-retos reto5 fondo mb-5">
+                <div class="text-center">
+                    <h5 class="pt-4">Reto 5</h5>
+                    <hr>
+                </div>
+                <div class="text-center">
+                    <p >Crear una página web programada que tenga una demostración programada parecida a la siguiente pantalla de la web de NISSAN. Debe existir un botón que realice un cálculo o mostrar una imagen relacionada con la selección. Utilzar el combo doble programado.</p>
+                    <p>Ver el ejemplo usando el siguiente enlace:</p>
+                    <a href="https://nissancr.net/Calculadora">https://nissancr.net/Calculadora</a>    
+                </div>
+                <div class="text-center pt-4">
+                    <img src="imgs/pw_t3_reto5.jpg" alt="Reto #5" class="img-fluid">
+                </div>
+
+                <div class="btn-general d-flex justify-content-center pt-5">
+                    <button type="button" id="btnReto5" class="btn btn-lg btn-secondary" onclick="navegarReto(this.id)">Reto #5</button>
+                </div>
+            </div>
+
+            <!-- Sección de Reto 6 --->
+            <div class="info-retos reto6 fondo mb-5">
+                <div class="text-center">
+                    <h5 class="pt-4">Reto 6</h5>
+                    <hr>
+                </div>
+                <div class="text-center">
+                    <p>Crear una página web programada que tenga una demostración donde se pueda elegir un color diferente a un carro modelo de una agencia. El componente que el usuario va a interactuar para cambiar los colores puede ser como: radio, combo o carousel. Poner un banner en la parte superior de la página web abajo del encabezado.</p>
+                    <p>Ver ejemplo para realizarlo de esa manera:</p>
+                    <a href="https://www.kia.com/cr/showroom/sorento.html">https://www.kia.com/cr/showroom/sorento.html</a>
+                    <p class="pt-3">Ejemplos de modelos de carro:</p>
+                    <p><a href="https://www.mitsubishi.cr/vehiculos/mirage-g4/">https://www.mitsubishi.cr/vehiculos/mirage-g4/</a></p>
+                    <p><a href="https://www.toyotacr.com/autos/yarishb">https://www.toyotacr.com/autos/yarishb</a></p>
+                    <p><a href="https://tienda.chevroletcr.com/filtrado#img_36056">https://tienda.chevroletcr.com/filtrado#img_36056</a></p>
+                </div>
+
+                <div class="text-center">
+                    <img src="imgs/pw_t3_reto6.jpg" alt="Reto #6" class="img-fluid">
+                </div>
+
+                <div class="btn-general d-flex justify-content-center pt-5">
+                    <button type="button" id="btnReto6" class="btn btn-lg btn-secondary" onclick="navegarReto(this.id)">Reto #6</button>
+                </div>
+            </div>
+
+            <!-- Sección de Reto 7 --->
+            <div class="info-retos reto7 fondo mb-5">
+                <div class="text-center">
+                    <h5 class="pt-4">Reto 7</h5>
+                    <hr>
+                </div>
+                <div class="text-center">
+                    <p>Crear una página web programada que tenga un mapa de imagen interactivo con 5 números o letras para que el usuario visite. Al dar clic debe aparecer un desplegable con una descripción general del objeto seleccionado. Puede utilizar cualquier tema para lograr el objetivo.</p>
+                    <p>Utilizar la herramienta gratuita befunky para crear las formas.</p>
+                    <p>Link: <a href="https://www.befunky.com/create">https://www.befunky.com/create</a></p>
+                </div>
+                <div class="text-center">
+                    <img src="imgs/pw_t3_reto7.jpg" alt="Reto #7" class="img-fluid">
+                </div>
+
+                <div class="btn-general d-flex justify-content-center pt-5">
+                    <button type="button" id="btnReto7" class="btn btn-lg btn-secondary" onclick="navegarReto(this.id)">Reto #7</button>
+                </div>
+            </div>
+
+            <!-- Sección de Reto 8 --->
+            <div class="info-retos reto8 fondo mb-5">
+                <div class="text-center">
+                    <h5 class="pt-4">Reto 8</h5>
+                    <hr>
+                </div>
+                <p class="text-center">Crear una página web programada donde se demuestre un registro de datos que se guarden en memoria y se pueden estar consultando en cualquier momento utilizando el combo simple.</p>
+                <div class="text-center">
+                    <img src="imgs/pw_t3_reto8.jpg" alt="Reto #8" class="img-fluid">
+                </div>
+
+                <div class="btn-general d-flex justify-content-center pt-5">
+                    <button type="button" id="btnReto8" class="btn btn-lg btn-secondary" onclick="navegarReto(this.id)">Reto #8</button>
+                </div>
+            </div>
+
+            <!-- Sección de Reto 9 --->
+            <div class="info-retos reto9 fondo mb-5">
+                <div class="text-center">
+                    <h5 class="pt-4">Reto 9</h5>
+                    <hr>
+                </div>
+                <p class="text-center">Crear una página web programada que tenga una demostración programada usando los controles dinámicos radio y checkbox de un formulario. La misma debe brindar un resultado al usuario al ser ejecutadas.</p>
+                <div class="text-center">
+                    <img src="imgs/pw_t3_reto9.jpg" alt="Reto #9" class="img-fluid">
+                </div>
+
+                <div class="btn-general d-flex justify-content-center pt-5">
+                    <button type="button" id="btnReto9" class="btn btn-lg btn-secondary" onclick="navegarReto(this.id)">Reto #9</button>
+                </div>
+            </div>
+
+            <!-- Sección de Reto 10 --->
+            <div class="info-retos reto10 fondo mb-5">
+                <div class="text-center">
+                    <h5 class="pt-4">Reto 10</h5>
+                    <hr>
+                </div>
+                <div class="text-center">
+                    <p>Crear una página web programada que tenga un buscador textual de acuerdo al siguiente objetivo: Al escribir un número de cédula del empleado debe aparecer la foto de cada empleado, en caso de que no exista el registro debe aparecer un desplegable que muestre El usuario NO existe. Usar validaciones.</p>
+                    <p>Usar las siguientes 5 cedulas de ejemplo: 109110338-209110338-309110338-409110338-509110338</p>
+                    <p>Debe salir una descripción diferente para cada usuario.</p>
+                </div>
+                <div class="text-center">
+                    <img src="imgs/pw_t3_reto10.jpg" alt="Reto #10" class="img-fluid">
+                </div>
+
+                <div class="btn-general d-flex justify-content-center pt-5">
+                    <button type="button" id="btnReto10" class="btn btn-lg btn-secondary" onclick="navegarReto(this.id)">Reto #10</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="pt-5"></div>
+    <div class="pt-5"></div>
+    <footer class="container">
+        <div class="container text-center">
+            <div class="row">
+                <div>
+                    <h4 class="display-6 text-white">&copy robrojas Web Development Derechos Reservados</h4>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    
+    <!-- carga de la interactividad del framework -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
+    
+    <!-- carga la librería JQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    
+    <!-- interactividad Lottie JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.13/lottie.min.js"></script>
+
+    <!-- libreria Lottie JS-->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@0.3.0/dist/lottie-player.js"></script>
+    
+    <script src="js/microinteracciones.js"></script>
+    <script src="js/index.js"></script>
+
+</body>
+</html>
