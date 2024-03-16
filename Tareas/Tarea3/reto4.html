@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/c3a0c05b30.js" crossorigin="anonymous"></script>
 
-    <title>Reto 3</title>
+    <title>Programación Web - Tarea #3</title>
 </head>
 
 <body id="inicio">
@@ -25,13 +25,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 col-md-6 col-lg-6 h-logo">
-                    <a href="index.html"><img src="imgs/pw_t3_index_logo.png" alt="Menu de Retos"></a>
+                    <img src="imgs/pw_t3_index_logo.png" alt="Menu de Retos">
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-6 pt-3">
                     <ul class="nav justify-content-end menu-items">
-                        <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="https://ucenfotec.ac.cr/" target="_blank">Cenfotec</a>
-                        </li>
+                        
                         <li class="nav-item">
                           <a class="nav-link" href="https://sdtimes.com/sd-times-magazine" target="_blank">SD Times</a>
                         </li>
@@ -39,9 +37,12 @@
                           <a class="nav-link" href="https://www.developer-tech.com/" target="_blank">Developer Tech</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">Inicio</a>
+                            <a class="nav-link active" aria-current="page" href="https://www.wearedevelopers.com/magazine" target="_blank">We are Developers</a>
                         </li>
-                      </ul>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                    </ul>
                       <div class="pb-2"></div>
                 </div>
             </div>
@@ -50,6 +51,85 @@
 
     <section class="container-fluid">
         <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12 text-center">
+                    <h2 class="display-2 pt-5">Tecnologías</h2>
+                    <h3>Revistas más vistas</h3>
+                    <div>
+                        <div class="microinteraccion2-js pt-5 cursor"></div>
+                    </div>
+                </div>
+                <p class="text-left pt-5">A continuación se mostrarán las opciones para visitar la revista que desees.</p>
+                <div class="col-12">
+                    <!-- COMBO DINAMICO --->
+                    <select name="menuOpciones" id="menuOpciones" class="form-select form-select-lg mb-5">
+                        <option value="" class="opcion0">Seleccionar un reto</option>
+                        <option value="revista1" class="opcion1">SD Times</option>
+                        <option value="revista2" class="opcion2">Developer Tech</option>
+                        <option value="revista3" class="opcion3">We are developers</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Sección por defecto --->
+            <div class="main-info">
+                
+                <div class="text-center">
+                    <h5 class="pt-4">Instrucción</h5>
+                    <p class="text-center">Desarrollar los siguientes retos de programación Java Script para lograr el objetivo. La gran mayoría son base de las prácticas realizadas en clase.</p>
+                    <img src="imgs/pw_t3_cenfotec_logo.png" alt="Cenfotec" class="img-fluid pt-4 pb-5">
+                </div>
+            </div>
+
+            <!-- Sección de SD Times  --->
+            <div class="info-retos revista1 fondo mb-5">
+                <div class="text-center">
+                    <h3 class="pt-4">SD Times</h3>
+                    <hr>
+                </div>
+                <p class="text-center">SD Times Software Development Magazine<div class="text-center">
+                    <img src="imgs/pw_t3_reto4.1.png" alt="SD Times" class="img-fluid">
+                </div>
+                <div class="btn-general d-flex justify-content-center pt-5">
+                    <button type="button" id="btnRevista1" class="btn btn-lg btn-secondary" onclick="navegarRevista(this.id)">Visitar revista</button>
+                </div>
+
+            </div>
+
+            <!-- Sección de Developer Tech --->
+            <div class="info-retos revista2 fondo mb-5">
+                <div class="text-center">
+                    <h3 class="pt-4">Developer Tech</h3>
+                    <hr>
+                </div>
+                <p class="text-center">Developer Tech Software Development Magazine</p>
+                <div class="text-center">
+                    <img src="imgs/pw_t3_reto4.2.png" alt="Developer Tech" class="img-fluid">
+                </div>
+                <div class="btn-general d-flex justify-content-center pt-5">
+                    <button type="button" id="btnRevista2" class="btn btn-lg btn-secondary" onclick="navegarReto(this.id)">Visitar revista</button>
+                </div>
+
+            </div>
+
+            <!-- Sección de We are Developers --->
+            <div class="info-retos revista3 fondo mb-5">
+                <div class="text-center">
+                    <h3 class="pt-4">We are Developers</h3>
+                    <hr>
+                </div>
+                <p class="text-center">We are Developers Software Development Magazine</p>
+                <div class="container">
+                    <div class="row">
+                        <div class="text-center">
+                            <img src="imgs/pw_t3_reto4.3.png" alt="We are Developers" class="img-fluid">
+                        </div>
+                        <div class="btn-general d-flex justify-content-center pt-5">
+                            <button type="button" id="btnRevista3" class="btn btn-lg btn-secondary" onclick="navegarRevista(this.id)">Visitar revista</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         </div>
     </section>
@@ -80,6 +160,8 @@
 
     <!-- libreria Lottie JS-->
     <script src="https://unpkg.com/@lottiefiles/lottie-player@0.3.0/dist/lottie-player.js"></script>
+    
+    <script src="js/reto4.js"></script>
 
 </body>
 </html>
