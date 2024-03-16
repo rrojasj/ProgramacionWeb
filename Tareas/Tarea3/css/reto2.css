@@ -1,0 +1,25 @@
+.input-group-text {
+    width: 90px;
+}
+
+.btn-danger {
+    background-color: #e86069 !important;
+    border-color: #e86069 !important;
+}
+
+.validation {
+    border-color: #e86069;
+    color: #e86069;
+}
+
+.span-modal1 {
+    color: rgb(83, 81, 81);
+}
+
+.span-modal2 {
+    background-color: #e1dfdf;
+}
+
+.span-modal2 h6 {
+    border-bottom: 1px solid #a4a2a2;
+}

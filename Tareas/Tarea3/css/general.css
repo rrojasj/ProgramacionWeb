@@ -10,11 +10,12 @@ footer {
     background-color: #275583;
 }
 
+
 h2 {
     color: #275583;
 }
 
-h3 {
+h1, h3 {
     color: #e86069;
 }
 
@@ -24,4 +25,12 @@ h3 {
 
 .h-logo {
     padding-top: 10px;
+}
+
+.h-logo a img{
+    cursor: pointer;
+}
+
+p {
+    font-size: 20px;
 }
