@@ -1,0 +1,28 @@
+#opciones {
+    width: 350px;
+    background-color: #066CB5;
+    border-color: #066CB5;
+    color: aliceblue;
+    border-radius: 5px;
+    z-index: 0;
+    padding: 10px;
+}
+
+.dropdown-menu {
+    width: 350px !important;
+    background-color: #066CB5 !important;
+}
+
+.dropdown-item:hover {
+    background-color: #044F84 !important;
+}
+
+.dropdown-item{
+    color: #F1F1F1 !important;
+}
+
+#opciones:focus([multiple]) {
+    background-color: #066CB5/* Your desired background color */;
+    color: aliceblue/* Your desired text color */;
+    /* Add any other styles you want to apply */
+}
